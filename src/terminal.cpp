@@ -44,6 +44,18 @@ std::string readCommand(){
           std::cout << std::endl;
             break;
         }
+
+        //handle backspace
+        if (c == 127 || c == '\b') {
+            if (!input.empty()) {
+                input.pop_back();
+                std::cout << "\b \b" << std::flush;
+            }
+            lastWasTab = false;
+            continue;
+        }
+
+        //handle escape
         if (c == '\033'){
             char seq[2];
 
