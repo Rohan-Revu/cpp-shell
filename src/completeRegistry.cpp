@@ -7,6 +7,7 @@
 #include <unistd.h>
 #include <sys/wait.h>
 #include <unordered_map>
+#include <algorithm>
 
 static std::unordered_map<std::string, std::string> completions;
 
