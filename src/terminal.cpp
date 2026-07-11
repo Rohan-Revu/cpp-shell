@@ -37,8 +37,15 @@ std::string readCommand(){
     int historyIndex = history.size();
 
     while (true) {
-      if (read(STDIN_FILENO, &c, 1) <= 0)
-          break;
+        if (read(STDIN_FILENO, &c, 1) <= 0)
+            break;
+
+        //handle ctrl-c
+        if (c == 3) {
+            input.clear();
+            std::cout << "^C" << std::endl;
+            break;
+        }
        
         if (c == '\n'){
           std::cout << std::endl;
