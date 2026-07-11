@@ -1,5 +1,7 @@
 # CPP Shell
 
+![Build](https://github.com/Rohan-Revu/cpp-shell/actions/workflows/build.yml/badge.svg)
+
 A Unix-like command-line shell built in Modern C++.
 
 CPP Shell is an interactive shell that supports command execution, pipelines, redirection, history management, variable expansion, tab completion, and background jobs.
@@ -137,31 +139,31 @@ Run:
 
 ## Built-in Commands
 
-| Command | Description |
-|----------|-------------|
-| cd | Change directory |
-| pwd | Print working directory |
-| echo | Print arguments |
-| exit | Exit the shell |
-| type | Identify command type |
-| history | Display command history |
+| Command | Description                      |
+| ------- | -------------------------------- |
+| cd      | Change directory                 |
+| pwd     | Print working directory          |
+| echo    | Print arguments                  |
+| exit    | Exit the shell                   |
+| type    | Identify command type            |
+| history | Display command history          |
 | declare | Create and print shell variables |
 
 ---
 
 ## Supported Shell Features
 
-| Feature | Status |
-|----------|--------|
-| External Commands | ✅ |
-| Built-ins | ✅ |
-| Pipelines | ✅ |
-| Redirection | ✅ |
-| Background Jobs | ✅ |
-| History | ✅ |
-| Variable Expansion | ✅ |
-| Tab Completion | ✅ |
-| Persistent History | ✅ |
+| Feature            | Status |
+| ------------------ | ------ |
+| External Commands  | ✅     |
+| Built-ins          | ✅     |
+| Pipelines          | ✅     |
+| Redirection        | ✅     |
+| Background Jobs    | ✅     |
+| History            | ✅     |
+| Variable Expansion | ✅     |
+| Tab Completion     | ✅     |
+| Persistent History | ✅     |
 
 ---
 
