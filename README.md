@@ -36,7 +36,7 @@ It supports command execution, pipelines, I/O redirection, background jobs, pers
 ## Demo
 
 <p align="center">
-  <img src="assets/demo.gif" alt="CPP Shell Demo" width="900">
+  <img src="assets/CPP-SHELL.gif" alt="CPP Shell Demo" width="900">
 </p>
 
 ---
