@@ -2,9 +2,9 @@
 
 ![Build](https://github.com/Rohan-Revu/cpp-shell/actions/workflows/build.yml/badge.svg)
 
-A Unix-like command-line shell built in Modern C++.
+A **Unix-like command-line shell** built in **Modern C++** using **POSIX system calls**.
 
-CPP Shell is an interactive shell that supports command execution, pipelines, redirection, history management, variable expansion, tab completion, and background jobs.
+It supports command execution, pipelines, I/O redirection, background jobs, persistent history, variable expansion, and intelligent tab completion.
 
 ---
 
@@ -35,22 +35,9 @@ CPP Shell is an interactive shell that supports command execution, pipelines, re
 
 ## Demo
 
-```bash
-$ declare fruit=apple
-
-$ echo $fruit
-apple
-
-$ ls | grep cpp
-
-$ history
-
-$ cd src
-
-$ pwd
-```
-
-(Add a GIF here later.)
+<p align="center">
+  <img src="assets/demo.gif" alt="CPP Shell Demo" width="900">
+</p>
 
 ---
 
