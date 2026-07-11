@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <csignal>
 
 
 
@@ -16,7 +17,17 @@
 #include "history.h"
 #include "variables.h"
 
+
+
+
+void sigintHandler(int)
+{
+    std::cout << std::endl;
+}
+
 int main() {
+
+    signal(SIGINT, sigintHandler);
 
     initializeTerminal();
 
