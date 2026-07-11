@@ -1,8 +1,5 @@
 #include <iostream>
 #include <string>
-#include <csignal>
-
-
 
 
 #include "parser.h"
@@ -20,14 +17,8 @@
 
 
 
-void sigintHandler(int)
-{
-    std::cout << std::endl;
-}
-
 int main() {
 
-    signal(SIGINT, sigintHandler);
 
     initializeTerminal();
 

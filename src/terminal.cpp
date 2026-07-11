@@ -7,6 +7,7 @@
 #include <iostream>
 #include <unistd.h>
 #include <termios.h>
+#include <cerrno> 
 
 
 void initializeTerminal(){
@@ -37,15 +38,18 @@ std::string readCommand(){
     int historyIndex = history.size();
 
     while (true) {
-        if (read(STDIN_FILENO, &c, 1) <= 0)
-            break;
+        ssize_t n = read(STDIN_FILENO, &c, 1);
 
-        //handle ctrl-c
-        if (c == 3) {
-            input.clear();
-            std::cout << "^C" << std::endl;
+        if (n < 0) {
+            if (errno == EINTR) {
+                input.clear();
+                return "";
+            }
             break;
         }
+
+        if (n == 0)
+            break;
        
         if (c == '\n'){
           std::cout << std::endl;
